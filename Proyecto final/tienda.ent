@@ -1,0 +1,20 @@
+categoria TiedaVirtual{
+	subCategoria Ropa;
+} 
+
+categoria Ropa{
+	subCategoria Hombre;
+	subCategoria Mujer;
+}
+
+categoria Mujer{
+	color se filtra por letras;
+	talla se filtra por letra;
+	precio se filtra por numero;
+}
+
+categoria Hombre{
+	color se filtra por letras;
+	talla se filtra por letra;
+	precio se filtra por numero;
+}

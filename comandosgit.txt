@@ -1,0 +1,29 @@
+git config global user.name "name"
+git config globar user.email "email"
+
+ssh-keygen
+Ingresa direccion para archivo keygen
+cat direccion
+
+glit clone url
+
+
+git init
+touch archivo //Crear nuevo archivo
+git add README.md //Agrega archivo
+git status //Status del repositorio
+git commit -m "first commit"
+git remote add origin "Direccion proyecto en github" //conecta repositorios
+
+git pull origin mastar //copia todo github a el disco
+
+git push origin master //todo a a¿github
+
+
+git checkout -b nombre
+git push origin nombre
+git brancH
+git push remote nombre // cambios en el commit
+git fetch // actualzia
+git merge nombreremoto/develop
+

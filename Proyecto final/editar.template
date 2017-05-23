@@ -1,0 +1,11 @@
+// template for add form view
+    {% for subCategoria in categoria.subCategorias %}
+    <div class="form-group">
+      <label for="{{subCategoria.name}}">{{subCategoria.name|capitalize}}</label>
+    </div>
+    {% endfor %}
+    {% for filtro in categoria.filtros %}
+    <div class="form-group">
+      <label for="{{filtro.name}}">{{filtro.name|capitalize}}</label>
+    </div>
+    {% endfor %}

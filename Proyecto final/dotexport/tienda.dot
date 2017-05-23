@@ -1,0 +1,34 @@
+
+    digraph xtext {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    nodesep = 0.3
+    edge[dir=black,arrowtail=empty]
+
+
+140402979633232 -> 140402979740752 [label="categorias:0" arrowtail=diamond dir=both]
+140402979740752 -> 140402979738640 [label="filtros:0" arrowtail=diamond dir=both]
+140402979738640 -> 140402979631440 [label="tipo" ]
+140402979631440[label="{string:TipoSimple|}"]
+140402979738640[label="{color:Filtro|}"]
+140402979740752 -> 140402979300432 [label="filtros:1" arrowtail=diamond dir=both]
+140402979300432 -> 140402979631376 [label="tipo" ]
+140402979631376[label="{integer:TipoSimple|}"]
+140402979300432[label="{talla:Filtro|}"]
+140402979740752[label="{Mujer:Categoria|}"]
+140402979633232 -> 140402979740496 [label="categorias:1" arrowtail=diamond dir=both]
+140402979740496 -> 140402979300688 [label="filtros:0" arrowtail=diamond dir=both]
+140402979300688 -> 140402979631440 [label="tipo" ]
+140402979300688[label="{color:Filtro|}"]
+140402979740496 -> 140402979300752 [label="filtros:1" arrowtail=diamond dir=both]
+140402979300752 -> 140402979631376 [label="tipo" ]
+140402979300752[label="{talla:Filtro|}"]
+140402979740496[label="{Hombre:Categoria|}"]
+140402979633232[label="{:EComerce|}"]
+
+}

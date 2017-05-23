@@ -1,0 +1,35 @@
+/*
+  Entity DSL grammar.
+*/
+
+EComerce:       
+    tipos*=TipoSimple                     
+    categorias+=Categoria      
+;
+
+Categoria:
+    'categoria' name=ID '{'
+        (filtros+=Filtro | subCategorias+=subCategoria)
+    '}'
+;
+
+subCategoria:
+    'subCategoria' name=ID ';'
+;
+
+Filtro:
+    name=ID 'se filtra por' tipo=[Tipo] ';' 
+;
+
+
+Tipo:
+    TipoSimple | Categoria
+;
+
+
+TipoSimple:
+    'tipo' name=ID
+;
+
+
+

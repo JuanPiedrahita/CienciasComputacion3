@@ -1,0 +1,44 @@
+
+    digraph xtext {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    nodesep = 0.3
+    edge[dir=black,arrowtail=empty]
+
+
+23919232 -> 23928288[arrowtail=diamond, dir=both, headlabel="filtros 1..*"]
+23919232[ label="{Categoria|+name:ID\l}"]
+
+23928288 -> 23935776[headlabel="tipo "]
+23928288[ label="{Filtro|+name:ID\l}"]
+
+23455808[ label="{TipoSimple|+name:ID\l}"]
+
+23913472 -> 23919232[arrowtail=diamond, dir=both, headlabel="categorias 1..*"]
+23913472[ label="{EComerce|}"]
+
+23935776[ label="{*Tipo|}"]
+23935776 -> 23455808 [dir=back]
+23935776 -> 23919232 [dir=back]
+
+23435648[ label="{STRING|}"]
+
+23769664[ label="{BASETYPE|}"]
+
+23448608[ label="{INT|}"]
+
+23451392[ label="{FLOAT|}"]
+
+23766096[ label="{NUMBER|}"]
+
+22938560[ label="{BOOL|}"]
+
+23498368[ label="{ID|}"]
+
+
+}
